@@ -1,8 +1,8 @@
 import time
 import calendar
 
-from .tartifact_store import TartifactStore
-from . import logs
+from tartifact_store import TartifactStore
+import logs
 
 
 STORAGE_CLIENT_EXPIRATION = 3600

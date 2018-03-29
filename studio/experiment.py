@@ -10,8 +10,8 @@ try:
 except ImportError:
     pip = None
 
-from . import fs_tracker
-from .util import shquote
+import fs_tracker
+from util import shquote
 
 
 class Experiment(object):

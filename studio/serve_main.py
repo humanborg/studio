@@ -11,8 +11,8 @@ import re
 import threading
 
 from flask import Flask, request
-from . import fs_tracker, logs
-from .model_util import ModelPipe
+import fs_tracker, logs
+from model_util import ModelPipe
 
 app = Flask(__name__)
 model = None

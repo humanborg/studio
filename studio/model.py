@@ -11,12 +11,12 @@ except ImportError:
 import yaml
 import six
 
-from .artifact_store import get_artifact_store
-from .http_provider import HTTPProvider
-from .firebase_provider import FirebaseProvider
-from .s3_provider import S3Provider
-from .gs_provider import GSProvider
-from . import logs
+from artifact_store import get_artifact_store
+from http_provider import HTTPProvider
+from firebase_provider import FirebaseProvider
+from s3_provider import S3Provider
+from gs_provider import GSProvider
+import logs
 
 
 def get_config(config_file=None):

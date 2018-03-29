@@ -11,12 +11,12 @@ import threading
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
-from . import fs_tracker, model, logs
-from .local_queue import LocalQueue
-from .gpu_util import get_available_gpus, get_gpu_mapping, get_gpus_summary
-from .experiment import Experiment
-from .util import sixdecode, str2duration, retry
-from .model import parse_verbosity
+import fs_tracker, model, logs
+from local_queue import LocalQueue
+from gpu_util import get_available_gpus, get_gpu_mapping, get_gpus_summary
+from experiment import Experiment
+from util import sixdecode, str2duration, retry
+from model import parse_verbosity
 
 logs.getLogger('apscheduler.scheduler').setLevel(logs.ERROR)
 

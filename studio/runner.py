@@ -12,21 +12,21 @@ import traceback
 from contextlib import closing
 import numpy as np
 
-from .local_queue import LocalQueue
-from .pubsub_queue import PubsubQueue
-from .sqs_queue import SQSQueue
-from .gcloud_worker import GCloudWorkerManager
-from .ec2cloud_worker import EC2WorkerManager
-from .hyperparameter import HyperparameterParser
-from .util import rand_string, Progbar, rsync_cp
-from .experiment import create_experiment
+from local_queue import LocalQueue
+from pubsub_queue import PubsubQueue
+from sqs_queue import SQSQueue
+from gcloud_worker import GCloudWorkerManager
+from ec2cloud_worker import EC2WorkerManager
+from hyperparameter import HyperparameterParser
+from util import rand_string, Progbar, rsync_cp
+from experiment import create_experiment
 
-from . import model
-from . import auth
-from . import git_util
-from . import local_worker
-from . import fs_tracker
-from . import logs
+import model
+import auth
+import git_util
+import local_worker
+import fs_tracker
+import logs
 
 
 def main(args=sys.argv[1:]):

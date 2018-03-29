@@ -1,7 +1,7 @@
 import time
 import sys
 from flask import Flask, render_template, request, redirect
-from . import model
+import model
 import argparse
 import yaml
 import json
@@ -13,8 +13,8 @@ import six
 import google.oauth2.id_token
 import google.auth.transport.requests
 
-from .experiment import experiment_from_dict
-from . import logs
+from experiment import experiment_from_dict
+import logs
 
 app = Flask(__name__)
 

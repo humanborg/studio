@@ -5,9 +5,9 @@ try:
 except BaseException:
     boto3 = None
 
-from .model import parse_verbosity
-from .util import retry
-from . import logs
+from model import parse_verbosity
+from util import retry
+import logs
 
 
 class SQSQueue(object):

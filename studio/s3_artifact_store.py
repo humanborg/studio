@@ -10,8 +10,8 @@ try:
 except ImportError:
     boto3 = None
 
-from .tartifact_store import TartifactStore
-from . import logs
+from tartifact_store import TartifactStore
+import logs
 
 
 class S3ArtifactStore(TartifactStore):

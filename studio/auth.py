@@ -11,8 +11,8 @@ try:
 except BaseException:
     BackgroundScheduler = None
 
-from .util import rand_string
-from . import logs
+from util import rand_string
+import logs
 
 
 TOKEN_DIR = os.path.expanduser('~/.studioml/keys')

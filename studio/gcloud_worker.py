@@ -7,9 +7,9 @@ import uuid
 import math
 import json
 
-from . import git_util, logs
-from .gpu_util import memstr2int
-from .cloud_worker_util import insert_user_startup_script
+import git_util, logs
+from gpu_util import memstr2int
+from cloud_worker_util import insert_user_startup_script
 
 
 class GCloudWorkerManager(object):

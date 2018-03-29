@@ -15,11 +15,11 @@ except ImportError:
 
 import hashlib
 
-from . import fs_tracker, logs
-from . import util
-from .util import download_file, download_file_from_qualified, retry
-from .util import compression_to_extension, compression_to_taropt, timeit
-from .util import sixdecode
+import fs_tracker, logs
+import util
+from util import download_file, download_file_from_qualified, retry
+from util import compression_to_extension, compression_to_taropt, timeit
+from util import sixdecode
 
 
 class TartifactStore(object):

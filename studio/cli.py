@@ -3,8 +3,8 @@ import sys
 import time
 from terminaltables import AsciiTable
 
-from . import model
-from . import logs
+import model
+import logs
 
 _my_logger = None
 

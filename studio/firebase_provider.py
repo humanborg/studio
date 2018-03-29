@@ -1,4 +1,4 @@
-from .keyvalue_provider import KeyValueProvider
+from keyvalue_provider import KeyValueProvider
 
 
 class FirebaseProvider(KeyValueProvider):

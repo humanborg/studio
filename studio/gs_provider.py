@@ -1,9 +1,9 @@
 import json
 import time
 import re
-from .keyvalue_provider import KeyValueProvider
-from .gcloud_artifact_store import GCloudArtifactStore
-from .util import timeit
+from keyvalue_provider import KeyValueProvider
+from gcloud_artifact_store import GCloudArtifactStore
+from util import timeit
 
 
 class GSProvider(KeyValueProvider):

@@ -15,9 +15,9 @@ import filelock
 import hashlib
 import pickle
 
-from . import git_util, util, logs
-from .gpu_util import memstr2int
-from .cloud_worker_util import insert_user_startup_script
+import git_util, util, logs
+from gpu_util import memstr2int
+from cloud_worker_util import insert_user_startup_script
 
 # list of instance types sorted by price
 _instance_specs = {

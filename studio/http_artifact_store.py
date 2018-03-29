@@ -1,6 +1,6 @@
-from .tartifact_store import TartifactStore
-from .util import download_file, upload_file
-from . import logs
+from tartifact_store import TartifactStore
+from util import download_file, upload_file
+import logs
 
 
 class HTTPArtifactStore(TartifactStore):

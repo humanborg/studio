@@ -4,9 +4,9 @@ import time
 import google
 from google.gax.errors import RetryError
 
-from .model import parse_verbosity
-from .util import sixdecode, retry
-from . import logs
+from model import parse_verbosity
+from util import sixdecode, retry
+import logs
 
 
 class PubsubQueue(object):

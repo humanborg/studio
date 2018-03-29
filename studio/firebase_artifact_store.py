@@ -3,10 +3,10 @@ import calendar
 import certifi
 import json
 
-from . import pyrebase
-from . import logs
-from .auth import get_auth
-from .tartifact_store import TartifactStore
+import pyrebase
+import logs
+from auth import get_auth
+from tartifact_store import TartifactStore
 
 
 class FirebaseArtifactStore(TartifactStore):

@@ -1,5 +1,5 @@
 import os
-from . import fs_tracker, logs
+import fs_tracker, logs
 import uuid
 import glob
 import time

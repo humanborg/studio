@@ -4,12 +4,12 @@ import six
 import re
 from threading import Thread
 
-from . import util, git_util, pyrebase, logs
-from .firebase_artifact_store import FirebaseArtifactStore
-from .auth import get_auth
-from .experiment import experiment_from_dict
-from .tartifact_store import get_immutable_artifact_key
-from .util import timeit, retry
+import util, git_util, pyrebase, logs
+from firebase_artifact_store import FirebaseArtifactStore
+from auth import get_auth
+from experiment import experiment_from_dict
+from tartifact_store import get_immutable_artifact_key
+from util import timeit, retry
 
 
 class KeyValueProvider(object):
